@@ -35,3 +35,36 @@ img {
   border-radius: 2px;
   background-color: rgb(218, 218, 218);
 }
+
+.coundown-input {
+  font-size: 26px;
+}
+
+.timer {
+  display: flex;
+  justify-content: left;
+}
+
+.timer .field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-right: 25px;
+
+  font-weight: 500;
+}
+
+.timer .field .value {
+  font-size: 62px;
+}
+
+.timer .label {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.coundown-input-btn {
+  font-size: 26px;
+}
