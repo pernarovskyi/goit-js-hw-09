@@ -25,7 +25,7 @@ const options = {
     if (refs.selectedDate <= now.getTime()) {
       refs.startBtn.setAttribute('disabled', '');
 
-      Notify.failure('Please choose a date in the future', {
+      Notify.failure('Please choose a future date.', {
         clickToClose: true,
         timeout: 2000,
         position: 'center-center',
@@ -88,7 +88,7 @@ const timer = {
       refs.minutesValue.textContent = minutes;
       refs.secondsValue.textContent = seconds;
 
-      console.log(`${days}:${hours}:${minutes}:${seconds}`);
+      // console.log(`${days}:${hours}:${minutes}:${seconds}`);
 
       if (deltaTime < 1000) {
         this.stop();
